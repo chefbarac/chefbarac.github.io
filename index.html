@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FKP1WY6QQ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-0FKP1WY6QQ");
+        </script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <title>Chefrel Baracol</title>
+        <meta name="description" content="Chefrel Baracol — Business Process Automation & Odoo Development. Available for remote and freelance work." />
+        <meta name="theme-color" content="#0c0e16" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <style>
+            :root {
+                --bg: #0c0e16;
+                --panel: #12141f;
+                --line: #262b3c;
+                --ink: #eeece4;
+                --dim: #8890a6;
+                --faint: #4c5268;
+                --accent: #9b83e0;
+                --signal: #5fd9a4;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                height: 100%;
+            }
+            body {
+                margin: 0;
+                background: var(--bg);
+                color: var(--ink);
+                font-family: "JetBrains Mono", monospace;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 24px;
+            }
+            ::selection {
+                background: var(--accent);
+                color: var(--bg);
+            }
+
+            .term {
+                width: 100%;
+                max-width: 680px;
+                background: var(--panel);
+                border: 1px solid var(--line);
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.6);
+            }
+            .term-bar {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 12px 16px;
+                border-bottom: 1px solid var(--line);
+            }
+            .term-bar .dot {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: var(--line);
+            }
+            .term-bar .title {
+                margin-left: 8px;
+                font-size: 12px;
+                color: var(--faint);
+                letter-spacing: 0.04em;
+            }
+
+            .term-body {
+                padding: 26px 24px 22px;
+                min-height: 340px;
+            }
+
+            .line {
+                font-size: 14px;
+                line-height: 1.9;
+                opacity: 0;
+            }
+            .line.prompt {
+                color: var(--dim);
+            }
+            .line.prompt .path {
+                color: var(--signal);
+            }
+            .line.out {
+                color: var(--ink);
+                padding-left: 0;
+            }
+            .line .caret {
+                display: inline-block;
+                width: 8px;
+                height: 15px;
+                background: var(--ink);
+                vertical-align: -2px;
+                margin-left: 2px;
+                animation: blink 1s steps(1) infinite;
+            }
+            @keyframes blink {
+                50% {
+                    opacity: 0;
+                }
+            }
+
+            .status {
+                display: inline-flex;
+                align-items: center;
+                gap: 7px;
+                color: var(--signal);
+            }
+            .status .pulse {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background: var(--signal);
+                box-shadow: 0 0 0 0 rgba(95, 217, 164, 0.6);
+                animation: pulse 2s ease-out infinite;
+            }
+            @keyframes pulse {
+                0% {
+                    box-shadow: 0 0 0 0 rgba(95, 217, 164, 0.45);
+                }
+                70% {
+                    box-shadow: 0 0 0 8px rgba(95, 217, 164, 0);
+                }
+                100% {
+                    box-shadow: 0 0 0 0 rgba(95, 217, 164, 0);
+                }
+            }
+
+            .routes {
+                margin-top: 22px;
+                display: grid;
+                gap: 1px;
+                background: var(--line);
+                border: 1px solid var(--line);
+                border-radius: 8px;
+                overflow: hidden;
+                opacity: 0;
+            }
+            .route {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background: var(--panel);
+                padding: 14px 16px;
+                text-decoration: none;
+                color: var(--ink);
+                font-size: 13.5px;
+                transition:
+                    background 0.12s ease,
+                    padding-left 0.12s ease;
+            }
+            .route:hover {
+                background: #181b29;
+                padding-left: 20px;
+            }
+            .route .l {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            .route .cmd {
+                color: var(--accent);
+            }
+            .route .desc {
+                color: var(--dim);
+                font-size: 12px;
+            }
+            .route .arrow {
+                color: var(--faint);
+                transition:
+                    transform 0.12s ease,
+                    color 0.12s ease;
+            }
+            .route:hover .arrow {
+                color: var(--accent);
+                transform: translateX(3px);
+            }
+
+            .term-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 14px 24px;
+                border-top: 1px solid var(--line);
+                font-size: 11px;
+                color: var(--faint);
+                opacity: 0;
+            }
+            .term-footer a {
+                color: var(--faint);
+                text-decoration: none;
+                margin-left: 14px;
+            }
+            .term-footer a:hover {
+                color: var(--accent);
+            }
+
+            @media (max-width: 480px) {
+                .term-body {
+                    padding: 22px 18px;
+                    min-height: auto;
+                }
+                .route .desc {
+                    display: none;
+                }
+            }
+
+            .fade-in {
+                animation: fadeIn 0.4s ease forwards;
+            }
+            @keyframes fadeIn {
+                to {
+                    opacity: 1;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                .line,
+                .routes,
+                .term-footer {
+                    opacity: 1 !important;
+                    animation: none !important;
+                }
+                .caret,
+                .pulse {
+                    animation: none !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="term">
+            <div class="term-bar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="title">chefrel@baracol — zsh</span>
+            </div>
+
+            <div class="term-body" id="body">
+                <!-- lines injected by JS for the typing sequence; noscript fallback below -->
+                <noscript>
+                    <div class="line out fade-in">chefrel@baracol:~$ whoami</div>
+                    <div class="line out fade-in">&gt; Chefrel Baracol — Business Process Automation &amp; Odoo Development</div>
+                    <div class="line out fade-in">chefrel@baracol:~$ status</div>
+                    <div class="line out fade-in">&gt; available for remote / freelance work · GMT+8</div>
+                    <div class="routes fade-in" style="opacity: 1">
+                        <a class="route" href="#contact"
+                            ><span class="l"><span class="cmd">./hire-me</span><span class="desc">start a project</span></span
+                            ><span class="arrow">→</span></a
+                        >
+                        <a class="route" href="https://chefbarac.github.io/hub/?source=main"
+                            ><span class="l"><span class="cmd">./hub</span><span class="desc">apps &amp; tools</span></span
+                            ><span class="arrow">→</span></a
+                        >
+                        <a class="route" href="https://chefbarac.github.io/portfolio/?source=main"
+                            ><span class="l"><span class="cmd">./portfolio</span><span class="desc">case studies</span></span
+                            ><span class="arrow">→</span></a
+                        >
+                    </div>
+                </noscript>
+            </div>
+
+            <div class="term-footer" id="footer">
+                <span>Dinas, Zamboanga del Sur, PH</span>
+                <span>
+                    <!-- TODO: replace with your real email -->
+                    <a href="mailto:chefrel.baracol@gmail.com">email</a>
+                    <!-- TODO: replace with your real GitHub handle if different -->
+                    <a href="https://github.com/chefbarac">github</a>
+                </span>
+            </div>
+        </div>
+
+        <script>
+            (function () {
+                var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+                var body = document.getElementById("body");
+                var footer = document.getElementById("footer");
+
+                var sequence = [
+                    { type: "prompt", text: "whoami" },
+                    { type: "out", text: "Chefrel Baracol — Business Process Automation & Odoo Development" },
+                    { type: "prompt", text: "status" },
+                    { type: "status", text: "available for remote / freelance work · GMT+8" },
+                    { type: "prompt", text: "ls destinations/" },
+                    { type: "routes" },
+                ];
+
+                function makeLine(kind) {
+                    var div = document.createElement("div");
+                    div.className = "line " + (kind === "prompt" ? "prompt" : "out");
+                    return div;
+                }
+
+                function typeText(el, text, cb) {
+                    if (reduced) {
+                        el.textContent = text;
+                        el.classList.add("fade-in");
+                        cb();
+                        return;
+                    }
+                    el.classList.add("fade-in");
+                    var i = 0;
+                    var caret = document.createElement("span");
+                    caret.className = "caret";
+                    function step() {
+                        el.textContent = text.slice(0, i);
+                        el.appendChild(caret);
+                        i++;
+                        if (i <= text.length) {
+                            setTimeout(step, 18 + Math.random() * 22);
+                        } else {
+                            caret.remove();
+                            cb();
+                        }
+                    }
+                    step();
+                }
+
+                function runStep(idx) {
+                    if (idx >= sequence.length) {
+                        footer.classList.add("fade-in");
+                        return;
+                    }
+                    var s = sequence[idx];
+
+                    if (s.type === "prompt") {
+                        var line = makeLine("prompt");
+                        body.appendChild(line);
+                        typeText(line, "", function () {}); // placeholder, replaced below
+                        // build prompt with colored path + typed command
+                        line.innerHTML = 'chefrel@baracol:<span class="path">~</span>$ ';
+                        var cmdSpan = document.createElement("span");
+                        line.appendChild(cmdSpan);
+                        typeText(cmdSpan, s.text, function () {
+                            runStep(idx + 1);
+                        });
+                    } else if (s.type === "out") {
+                        var line = makeLine("out");
+                        body.appendChild(line);
+                        typeText(line, "> " + s.text, function () {
+                            setTimeout(function () {
+                                runStep(idx + 1);
+                            }, 120);
+                        });
+                    } else if (s.type === "status") {
+                        var line = makeLine("out");
+                        body.appendChild(line);
+                        line.classList.add("fade-in");
+                        line.innerHTML = '<span class="status"><span class="pulse"></span>' + s.text + "</span>";
+                        setTimeout(function () {
+                            runStep(idx + 1);
+                        }, 350);
+                    } else if (s.type === "routes") {
+                        var routes = document.createElement("div");
+                        routes.className = "routes fade-in";
+                        routes.innerHTML =
+                            '<a class="route" href="#contact">' +
+                            '<span class="l"><span class="cmd">./hire-me</span><span class="desc">start a project</span></span>' +
+                            '<span class="arrow">→</span></a>' +
+                            '<a class="route" href="https://chefbarac.github.io/hub/?source=main">' +
+                            '<span class="l"><span class="cmd">./hub</span><span class="desc">apps &amp; tools</span></span>' +
+                            '<span class="arrow">→</span></a>' +
+                            '<a class="route" href="https://chefbarac.github.io/portfolio/?source=main">' +
+                            '<span class="l"><span class="cmd">./portfolio</span><span class="desc">case studies</span></span>' +
+                            '<span class="arrow">→</span></a>';
+                        body.appendChild(routes);
+                        var contactLink = routes.querySelector('a[href="#contact"]');
+                        contactLink.addEventListener("click", function (e) {
+                            e.preventDefault();
+                            window.location.href = "mailto:chefrel.baracol@gmail.com";
+                        });
+                        setTimeout(function () {
+                            runStep(idx + 1);
+                        }, 200);
+                    }
+                }
+
+                runStep(0);
+            })();
+        </script>
+    </body>
+</html>
