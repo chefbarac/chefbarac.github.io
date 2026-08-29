@@ -1,418 +1,1221 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FKP1WY6QQ"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Printing Tools for Print Shops | Free Print Tools</title>
+<meta name="description" content="Free browser-based printing tools for print shops, ID photo shops, and everyday users. Create ID copies, photo layouts, sticker sheets, collages, lamination layouts, and more.">
+<meta name="robots" content="index, follow">
 
-            gtag("config", "G-0FKP1WY6QQ");
-        </script>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <title>Chefrel Baracol</title>
-        <meta name="description" content="Chefrel Baracol — Business Process Automation & Odoo Development. Available for remote and freelance work." />
-        <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><text y=".9em" font-size="90">CB</text></svg>' />
-        <meta name="theme-color" content="#0c0e16" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
-        <style>
-            :root {
-                --bg: #0c0e16;
-                --panel: #12141f;
-                --line: #262b3c;
-                --ink: #eeece4;
-                --dim: #8890a6;
-                --faint: #4c5268;
-                --accent: #9b83e0;
-                --signal: #5fd9a4;
-            }
-            * {
-                box-sizing: border-box;
-            }
-            html,
-            body {
-                height: 100%;
-            }
-            body {
-                margin: 0;
-                background: var(--bg);
-                color: var(--ink);
-                font-family: "JetBrains Mono", monospace;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 24px;
-            }
-            ::selection {
-                background: var(--accent);
-                color: var(--bg);
-            }
+<!-- ============================================================
+     SEO: Canonical & Social metadata.
+     Update CANONICAL_URL below if this page is deployed at a
+     different path than the current root of chefbarac.github.io/iconprint/
+     ============================================================ -->
+<link rel="canonical" href="https://chefbarac.github.io/iconprint/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Printing Tools for Print Shops | Free Print Tools">
+<meta property="og:description" content="Free browser-based printing tools for print shops, ID photo shops, and everyday users. Create ID copies, photo layouts, sticker sheets, collages, lamination layouts, and more.">
+<meta property="og:url" content="https://chefbarac.github.io/iconprint/">
+<!-- <meta property="og:image" content=""> add an image URL here if one becomes available -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free Printing Tools for Print Shops | Free Print Tools">
+<meta name="twitter:description" content="Free browser-based printing tools for print shops, ID photo shops, and everyday users.">
 
-            .term {
-                width: 100%;
-                max-width: 680px;
-                background: var(--panel);
-                border: 1px solid var(--line);
-                border-radius: 10px;
-                overflow: hidden;
-                box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.6);
-            }
-            .term-bar {
-                display: flex;
-                align-items: center;
-                gap: 8px;
-                padding: 12px 16px;
-                border-bottom: 1px solid var(--line);
-            }
-            .term-bar .dot {
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background: var(--line);
-            }
-            .term-bar .title {
-                margin-left: 8px;
-                font-size: 12px;
-                color: var(--faint);
-                letter-spacing: 0.04em;
-            }
+<!-- ============================================================
+     Structured data (JSON-LD)
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Free Print Tools",
+  "alternateName": "Print Shop Toolbox",
+  "url": "https://chefbarac.github.io/iconprint/",
+  "description": "Free browser-based printing tools for print shops, ID photo shops, and everyday users."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Free Print Tools directory",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Icon Print — Bond Paper Stitcher", "url": "https://chefbarac.github.io/iconprint/?source=land" },
+    { "@type": "ListItem", "position": 2, "name": "ID Card Scan & Print", "url": "https://chefbarac.github.io/iconprint/moreapps/idcopy.html?source=land" },
+    { "@type": "ListItem", "position": 3, "name": "Photo Printing Studio", "url": "https://chefbarac.github.io/iconprint/moreapps/photoprint.html?source=land" },
+    { "@type": "ListItem", "position": 4, "name": "Auto Collage — Contact Sheet", "url": "https://chefbarac.github.io/iconprint/moreapps/autocollage.html?source=land" },
+    { "@type": "ListItem", "position": 5, "name": "Rush ID — Auto Layout", "url": "https://chefbarac.github.io/iconprint/moreapps/rushid.html?source=land" },
+    { "@type": "ListItem", "position": 6, "name": "Sticker Repeat", "url": "https://chefbarac.github.io/iconprint/moreapps/stickerrepeat.html?source=land" },
+    { "@type": "ListItem", "position": 7, "name": "Back to Back Lamination", "url": "https://chefbarac.github.io/iconprint/moreapps/b2blamination.html?source=land" }
+  ]
+}
+</script>
 
-            .term-body {
-                padding: 26px 24px 22px;
-                min-height: 340px;
-            }
+<style>
+  /* ============================================================
+     TOKENS — edit these to reskin the whole site
+     ============================================================ */
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --surface-muted: #f0f2f5;
 
-            .line {
-                font-size: 14px;
-                line-height: 1.9;
-                opacity: 0;
-            }
-            .line.prompt {
-                color: var(--dim);
-            }
-            .line.prompt .path {
-                color: var(--signal);
-            }
-            .line.out {
-                color: var(--ink);
-                padding-left: 0;
-            }
-            .line .caret {
-                display: inline-block;
-                width: 8px;
-                height: 15px;
-                background: var(--ink);
-                vertical-align: -2px;
-                margin-left: 2px;
-                animation: blink 1s steps(1) infinite;
-            }
-            @keyframes blink {
-                50% {
-                    opacity: 0;
-                }
-            }
+    --text: #17191c;
+    --text-muted: #667085;
 
-            .status {
-                display: inline-flex;
-                align-items: center;
-                gap: 7px;
-                color: var(--signal);
-            }
-            .status .pulse {
-                width: 7px;
-                height: 7px;
-                border-radius: 50%;
-                background: var(--signal);
-                box-shadow: 0 0 0 0 rgba(95, 217, 164, 0.6);
-                animation: pulse 2s ease-out infinite;
-            }
-            @keyframes pulse {
-                0% {
-                    box-shadow: 0 0 0 0 rgba(95, 217, 164, 0.45);
-                }
-                70% {
-                    box-shadow: 0 0 0 8px rgba(95, 217, 164, 0);
-                }
-                100% {
-                    box-shadow: 0 0 0 0 rgba(95, 217, 164, 0);
-                }
-            }
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --primary-soft: #e7edfd;
 
-            .routes {
-                margin-top: 22px;
-                display: grid;
-                gap: 1px;
-                background: var(--line);
-                border: 1px solid var(--line);
-                border-radius: 8px;
-                overflow: hidden;
-                opacity: 0;
-            }
-            .route {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background: var(--panel);
-                padding: 14px 16px;
-                text-decoration: none;
-                color: var(--ink);
-                font-size: 13.5px;
-                transition:
-                    background 0.12s ease,
-                    padding-left 0.12s ease;
-            }
-            .route:hover {
-                background: #181b29;
-                padding-left: 20px;
-            }
-            .route .l {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-            }
-            .route .cmd {
-                color: var(--accent);
-            }
-            .route .desc {
-                color: var(--dim);
-                font-size: 12px;
-            }
-            .route .arrow {
-                color: var(--faint);
-                transition:
-                    transform 0.12s ease,
-                    color 0.12s ease;
-            }
-            .route:hover .arrow {
-                color: var(--accent);
-                transform: translateX(3px);
-            }
+    --stamp: #b3491f;      /* rubber-stamp accent used sparingly on the Featured / Rush badge */
+    --stamp-soft: #fbeae2;
 
-            .term-footer {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 14px 24px;
-                border-top: 1px solid var(--line);
-                font-size: 11px;
-                color: var(--faint);
-                opacity: 0;
-            }
-            .term-footer a {
-                color: var(--faint);
-                text-decoration: none;
-                margin-left: 14px;
-            }
-            .term-footer a:hover {
-                color: var(--accent);
-            }
+    --border: #e2e5e9;
+    --success: #16803c;
+    --success-soft: #e7f5eb;
 
-            @media (max-width: 480px) {
-                .term-body {
-                    padding: 22px 18px;
-                    min-height: auto;
-                }
-                .route .desc {
-                    display: none;
-                }
-            }
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
 
-            .fade-in {
-                animation: fadeIn 0.4s ease forwards;
-            }
-            @keyframes fadeIn {
-                to {
-                    opacity: 1;
-                }
-            }
+    --font-body: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 
-            @media (prefers-reduced-motion: reduce) {
-                .line,
-                .routes,
-                .term-footer {
-                    opacity: 1 !important;
-                    animation: none !important;
-                }
-                .caret,
-                .pulse {
-                    animation: none !important;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="term">
-            <div class="term-bar">
-                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                <span class="title">chefrel@baracol — zsh</span>
-            </div>
+    --shadow-card: 0 1px 2px rgba(23, 25, 28, 0.04), 0 1px 1px rgba(23, 25, 28, 0.03);
+    --shadow-card-hover: 0 6px 18px rgba(23, 25, 28, 0.08);
 
-            <div class="term-body" id="body">
-                <!-- lines injected by JS for the typing sequence; noscript fallback below -->
-                <noscript>
-                    <div class="line out fade-in">chefrel@baracol:~$ whoami</div>
-                    <div class="line out fade-in">&gt; Chefrel Baracol — Business Process Automation &amp; Odoo Development</div>
-                    <div class="line out fade-in">chefrel@baracol:~$ status</div>
-                    <div class="line out fade-in">&gt; available for remote / freelance work · GMT+8</div>
-                    <div class="routes fade-in" style="opacity: 1">
-                        <a class="route" href="#contact"
-                            ><span class="l"><span class="cmd">./hire-me</span><span class="desc">start a project</span></span
-                            ><span class="arrow">→</span></a
-                        >
-                        <a class="route" href="https://chefbarac.github.io/hub/?source=main"
-                            ><span class="l"><span class="cmd">./hub</span><span class="desc">apps &amp; tools</span></span
-                            ><span class="arrow">→</span></a
-                        >
-                        <a class="route" href="https://chefbarac.github.io/portfolio/?source=main"
-                            ><span class="l"><span class="cmd">./portfolio</span><span class="desc">case studies</span></span
-                            ><span class="arrow">→</span></a
-                        >
-                    </div>
-                </noscript>
-            </div>
+    --max-width: 1240px;
+  }
 
-            <div class="term-footer" id="footer">
-                <span>Dinas, Zamboanga del Sur, PH</span>
-                <span>
-                    <!-- TODO: replace with your real email -->
-                    <a href="mailto:chefrel.baracol@gmail.com">email</a>
-                    <!-- TODO: replace with your real GitHub handle if different -->
-                    <a href="https://github.com/chefbarac">github</a>
-                </span>
-            </div>
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, svg { display: block; max-width: 100%; }
+
+  a { color: inherit; }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  h1, h2, h3 { line-height: 1.2; margin: 0; }
+
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  /* ============================================================
+     HEADER
+     ============================================================ */
+  header.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(246, 247, 249, 0.92);
+    backdrop-filter: saturate(180%) blur(6px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    gap: 16px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--text);
+    white-space: nowrap;
+  }
+  .brand small {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  nav.main-nav {
+    display: flex;
+    gap: 4px;
+  }
+  nav.main-nav button {
+    background: none;
+    border: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+  }
+  nav.main-nav button:hover { color: var(--text); background: var(--surface-muted); }
+
+  @media (max-width: 640px) {
+    nav.main-nav button span.nav-full { display: none; }
+  }
+
+  /* ============================================================
+     HERO — compact, with subtle halftone + registration marks
+     ============================================================ */
+  .hero {
+    position: relative;
+    padding: 40px 20px 36px;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(var(--border) 1px, transparent 1px);
+    background-size: 14px 14px;
+    -webkit-mask-image: linear-gradient(to bottom, black, transparent);
+    mask-image: linear-gradient(to bottom, black, transparent);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .hero-inner {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .crop-marks {
+    position: relative;
+  }
+  .crop-marks::before,
+  .crop-marks::after,
+  .crop-marks .cm-tr,
+  .crop-marks .cm-bl {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-color: var(--text-muted);
+    opacity: 0.35;
+  }
+  .crop-marks::before { top: -10px; left: -10px; border-top: 1.5px solid; border-left: 1.5px solid; }
+  .crop-marks::after { bottom: -10px; right: -10px; border-bottom: 1.5px solid; border-right: 1.5px solid; }
+
+  .hero h1 {
+    font-size: clamp(28px, 4.4vw, 40px);
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+  .hero .subtitle {
+    margin-top: 12px;
+    font-size: 17px;
+    color: var(--text-muted);
+  }
+  .hero .support-line {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: var(--font-mono);
+    color: var(--success);
+    letter-spacing: 0.01em;
+  }
+
+  .hero-ctas {
+    margin-top: 22px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font: inherit;
+    font-weight: 700;
+    font-size: 14.5px;
+    padding: 12px 20px;
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.12s ease, background 0.15s ease, box-shadow .15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--primary); color: #fff; }
+  .btn-primary:hover { background: var(--primary-hover); }
+  .btn-secondary { background: var(--surface); color: var(--text); border-color: var(--border); }
+  .btn-secondary:hover { background: var(--surface-muted); }
+  .btn-block { width: 100%; justify-content: center; }
+
+  /* ============================================================
+     BENEFITS
+     ============================================================ */
+  .benefits {
+    padding: 8px 20px 40px;
+  }
+  .benefits-grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 800px) {
+    .benefits-grid { grid-template-columns: 1fr; }
+  }
+  .benefit-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 18px;
+  }
+  .benefit-card .icon { font-size: 22px; }
+  .benefit-card h3 { font-size: 15px; margin-top: 10px; }
+  .benefit-card p { margin: 6px 0 0; font-size: 13.5px; color: var(--text-muted); }
+
+  /* ============================================================
+     SEARCH + FILTERS
+     ============================================================ */
+  .toolbar {
+    padding: 8px 20px 20px;
+  }
+  .toolbar-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .search-box {
+    position: relative;
+    max-width: 640px;
+    margin: 0 auto 18px;
+  }
+  .search-box label { display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600; color: var(--text-muted); }
+  .search-box input {
+    width: 100%;
+    font: inherit;
+    font-size: 16px;
+    padding: 14px 16px 14px 44px;
+    border-radius: var(--radius-md);
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+  }
+  .search-box input:focus { border-color: var(--primary); }
+  .search-box .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 42px;
+    font-size: 16px;
+    color: var(--text-muted);
+    pointer-events: none;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  .chip {
+    font: inherit;
+    font-size: 13.5px;
+    font-weight: 600;
+    padding: 9px 14px;
+    border-radius: 999px;
+    border: 1.5px solid var(--border);
+    background: var(--surface);
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: background .12s ease, color .12s ease, border-color .12s ease;
+  }
+  .chip:hover { border-color: var(--primary); color: var(--text); }
+  .chip[aria-pressed="true"] {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #fff;
+  }
+
+  .result-count {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 13px;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+  }
+
+  /* ============================================================
+     SECTIONS shared
+     ============================================================ */
+  section.block { padding: 36px 20px; }
+  section.block.muted { background: var(--surface-muted); }
+  .block-inner { max-width: var(--max-width); margin: 0 auto; }
+  .block-head { margin-bottom: 20px; text-align: center; }
+  .block-head h2 { font-size: 22px; font-weight: 800; }
+  .block-head p { margin-top: 6px; color: var(--text-muted); font-size: 14.5px; }
+
+  /* ============================================================
+     FEATURED TOOL — the signature "ink stamp" treatment
+     ============================================================ */
+  #featured-wrap { padding-top: 6px; }
+  .featured-card {
+    position: relative;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 22px;
+    align-items: center;
+    box-shadow: var(--shadow-card);
+  }
+  @media (max-width: 760px) {
+    .featured-card { grid-template-columns: 1fr; text-align: left; }
+  }
+  .featured-icon {
+    font-size: 44px;
+    width: 84px; height: 84px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--primary-soft);
+    border-radius: var(--radius-md);
+  }
+  .featured-badges { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  .stamp-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--stamp);
+    border: 1.5px dashed var(--stamp);
+    background: var(--stamp-soft);
+    padding: 5px 10px;
+    border-radius: 6px;
+    transform: rotate(-2deg);
+  }
+  .quiet-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    background: var(--surface-muted);
+    border: 1px solid var(--border);
+    padding: 5px 10px;
+    border-radius: 6px;
+  }
+  .featured-card h3 { font-size: 21px; font-weight: 800; }
+  .featured-card .desc { margin-top: 8px; color: var(--text-muted); font-size: 14.5px; max-width: 54ch; }
+  .featured-specs {
+    margin-top: 10px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+  }
+  .featured-actions { display: flex; flex-direction: column; gap: 10px; align-items: flex-end; }
+  @media (max-width: 760px) { .featured-actions { align-items: flex-start; } }
+
+  /* ============================================================
+     TOOL GRID
+     ============================================================ */
+  .tool-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 1080px) { .tool-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 800px)  { .tool-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px)  { .tool-grid { grid-template-columns: 1fr; } }
+
+  .tool-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 18px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--shadow-card);
+    transition: box-shadow .15s ease, transform .15s ease, border-color .15s ease;
+  }
+  .tool-card:hover, .tool-card:focus-visible {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-2px);
+    border-color: #cdd3db;
+  }
+  .tool-card-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .tool-icon { font-size: 26px; }
+  .category-badge {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--primary);
+    background: var(--primary-soft);
+    padding: 4px 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  .tool-card h3 {
+    margin-top: 14px;
+    font-size: 15.5px;
+    font-weight: 700;
+  }
+  .tool-card .desc {
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--text-muted);
+    flex-grow: 1;
+  }
+  .tag-row {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tag {
+    font-size: 11px;
+    color: var(--text-muted);
+    background: var(--surface-muted);
+    border: 1px solid var(--border);
+    padding: 3px 7px;
+    border-radius: 5px;
+  }
+  .offline-badge {
+    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--success);
+    background: var(--success-soft);
+    padding: 4px 8px;
+    border-radius: 5px;
+    width: fit-content;
+  }
+  .tool-card .open-cta {
+    margin-top: 14px;
+    font-weight: 700;
+    font-size: 13.5px;
+    color: var(--primary);
+  }
+
+  .empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--text-muted);
+  }
+  .empty-state .big { font-size: 17px; font-weight: 700; color: var(--text); }
+
+  /* ============================================================
+     RECENTLY USED
+     ============================================================ */
+  #recent-wrap { display: none; }
+  .recent-strip {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .recent-chip {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 8px 14px 8px 10px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .recent-chip:hover { border-color: var(--primary); }
+
+  /* ============================================================
+     "WHAT DO YOU NEED TO PRINT" QUICK LINKS
+     ============================================================ */
+  .need-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 900px) { .need-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .need-grid { grid-template-columns: 1fr; } }
+  .need-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px;
+  }
+  .need-card h3 { font-size: 14.5px; display: flex; align-items: center; gap: 8px; }
+  .need-card p { margin: 6px 0 10px; font-size: 13px; color: var(--text-muted); }
+  .need-links { display: flex; flex-direction: column; gap: 6px; }
+  .need-links a {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+  }
+  .need-links a:hover { text-decoration: underline; }
+
+  /* ============================================================
+     HOW IT WORKS
+     ============================================================ */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+  }
+  @media (max-width: 900px) { .steps-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .steps-grid { grid-template-columns: 1fr; } }
+  .step-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 16px;
+  }
+  .step-num {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary);
+  }
+  .step-card h3 { font-size: 14.5px; margin-top: 6px; }
+  .step-card p { margin: 6px 0 0; font-size: 13px; color: var(--text-muted); }
+
+  /* ============================================================
+     OFFLINE EXPLANATION
+     ============================================================ */
+  .offline-explain {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .offline-explain p { color: var(--text-muted); font-size: 14.5px; }
+  .offline-note {
+    margin-top: 14px;
+    font-size: 12.5px;
+    color: var(--text-muted);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+  }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  footer.site-footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 20px;
+    text-align: center;
+  }
+  footer.site-footer h2 { font-size: 16px; }
+  footer.site-footer p { color: var(--text-muted); font-size: 13.5px; margin: 6px 0 0; }
+  footer .fine-print { margin-top: 14px; font-family: var(--font-mono); font-size: 11.5px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top">
+      Free Print Tools <small>Print Shop Toolbox</small>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <button type="button" data-scroll="#tools-anchor"><span class="nav-full">Tools</span><span aria-hidden="true" class="nav-mobile">🧰</span></button>
+      <button type="button" data-scroll="#need-anchor"><span class="nav-full">Categories</span><span aria-hidden="true" class="nav-mobile">🗂️</span></button>
+      <button type="button" data-scroll="#how-anchor"><span class="nav-full">How It Works</span><span aria-hidden="true" class="nav-mobile">❓</span></button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner crop-marks">
+      <p class="eyebrow">Free · Browser-Based · No Account</p>
+      <h1>Free Printing Tools for Print Shops</h1>
+      <p class="subtitle">Simple browser-based tools for ID photos, documents, stickers, photo layouts, and everyday printing jobs.</p>
+      <p class="support-line">Free to use. No account required. Many tools are designed to work offline.</p>
+      <div class="hero-ctas">
+        <button type="button" class="btn btn-primary" data-scroll="#tools-anchor">Browse All Tools ↓</button>
+        <a class="btn btn-secondary" href="https://chefbarac.github.io/iconprint/moreapps/rushid.html">Try Rush ID →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BENEFITS
+       ============================================================ -->
+  <section class="benefits">
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="icon">🆓</div>
+        <h3>Free to Use</h3>
+        <p>Practical printing utilities you can use without a subscription or account.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon">📴</div>
+        <h3>Offline-Friendly</h3>
+        <p>Many tools are designed to keep working without an active internet connection after they are loaded or cached.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="icon">🖨️</div>
+        <h3>Made for Printing</h3>
+        <p>Built around real printing tasks such as ID photos, document layouts, stickers, photo sheets, and paper preparation.</p>
+      </div>
+    </div>
+  </section>
+
+  <span id="tools-anchor"></span>
+
+  <!-- ============================================================
+       SEARCH + FILTERS
+       ============================================================ -->
+  <section class="toolbar">
+    <div class="toolbar-inner">
+      <div class="search-box">
+        <label for="tool-search">Search tools</label>
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="search" id="tool-search" placeholder="Search printing tools...">
+      </div>
+      <div class="filters" id="filter-chips" role="group" aria-label="Filter tools by category"></div>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURED TOOL
+       ============================================================ -->
+  <div id="featured-wrap" class="block">
+    <div class="block-inner">
+      <div class="block-head" style="text-align:left; margin-bottom:14px;">
+        <p class="eyebrow">⭐ Featured Tool</p>
+      </div>
+      <div id="featured-slot"></div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ALL TOOLS
+       ============================================================ -->
+  <section class="block">
+    <div class="block-inner">
+      <div class="block-head" style="text-align:left; margin-bottom:14px;">
+        <p class="eyebrow">All Tools</p>
+      </div>
+      <div id="tool-grid" class="tool-grid"></div>
+      <div id="empty-state" class="empty-state" style="display:none;">
+        <p class="big">No tools found</p>
+        <p>Try another keyword or category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       RECENTLY USED
+       ============================================================ -->
+  <div id="recent-wrap" class="block muted">
+    <div class="block-inner">
+      <div class="block-head" style="text-align:left; margin-bottom:14px;">
+        <p class="eyebrow">Recently Used</p>
+      </div>
+      <div id="recent-strip" class="recent-strip"></div>
+    </div>
+  </div>
+
+  <span id="need-anchor"></span>
+
+  <!-- ============================================================
+       WHAT DO YOU NEED TO PRINT
+       ============================================================ -->
+  <section class="block muted">
+    <div class="block-inner">
+      <div class="block-head">
+        <h2>What do you need to print?</h2>
+        <p>Jump straight to the right tool for the job.</p>
+      </div>
+      <div class="need-grid">
+        <div class="need-card">
+          <h3>🪪 ID / Documents</h3>
+          <p>Need to copy an ID or prepare ID photos?</p>
+          <div class="need-links">
+            <a href="/iconprint/moreapps/rushid.html">→ Rush ID</a>
+            <a href="/iconprint/moreapps/idcopy.html">→ ID Card Scan &amp; Print</a>
+          </div>
         </div>
+        <div class="need-card">
+          <h3>📷 Photos</h3>
+          <p>Need to arrange photos on a printable sheet?</p>
+          <div class="need-links">
+            <a href="/iconprint/moreapps/photoprint.html">→ Photo Printing Studio</a>
+            <a href="/iconprint/moreapps/autocollage.html">→ Auto Collage</a>
+          </div>
+        </div>
+        <div class="need-card">
+          <h3>🏷️ Stickers</h3>
+          <p>Need multiple copies of a sticker design?</p>
+          <div class="need-links">
+            <a href="/iconprint/moreapps/stickerrepeat.html">→ Sticker Repeat</a>
+          </div>
+        </div>
+        <div class="need-card">
+          <h3>📄 Lamination</h3>
+          <p>Need a front-and-back document or card layout?</p>
+          <div class="need-links">
+            <a href="/iconprint/moreapps/b2blamination.html">→ Back to Back Lamination</a>
+          </div>
+        </div>
+        <div class="need-card">
+          <h3>🖨️ Long Bond Paper</h3>
+          <p>Need to join scanned pages into one long document?</p>
+          <div class="need-links">
+            <a href="https://chefbarac.github.io/iconprint/">→ Icon Print — Bond Paper Stitcher</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <script>
-            (function () {
-                var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-                var body = document.getElementById("body");
-                var footer = document.getElementById("footer");
+  <span id="how-anchor"></span>
 
-                var sequence = [
-                    { type: "prompt", text: "whoami" },
-                    { type: "out", text: "Chefrel Baracol — Business Process Automation & Odoo Development" },
-                    { type: "prompt", text: "status" },
-                    { type: "status", text: "available for remote / freelance work · GMT+8" },
-                    { type: "prompt", text: "ls destinations/" },
-                    { type: "routes" },
-                ];
+  <!-- ============================================================
+       HOW IT WORKS
+       ============================================================ -->
+  <section class="block">
+    <div class="block-inner">
+      <div class="block-head">
+        <h2>How It Works</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <p class="step-num">01</p>
+          <h3>Choose a Tool</h3>
+          <p>Pick the printing task you need to complete.</p>
+        </div>
+        <div class="step-card">
+          <p class="step-num">02</p>
+          <h3>Open It</h3>
+          <p>Launch the tool directly in your browser.</p>
+        </div>
+        <div class="step-card">
+          <p class="step-num">03</p>
+          <h3>Prepare Your Layout</h3>
+          <p>Upload or scan your images and adjust the layout.</p>
+        </div>
+        <div class="step-card">
+          <p class="step-num">04</p>
+          <h3>Print or Export</h3>
+          <p>Print your finished layout or export it when the tool supports it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                function makeLine(kind) {
-                    var div = document.createElement("div");
-                    div.className = "line " + (kind === "prompt" ? "prompt" : "out");
-                    return div;
-                }
+  <!-- ============================================================
+       OFFLINE EXPLANATION
+       ============================================================ -->
+  <section class="block muted">
+    <div class="block-inner offline-explain">
+      <div class="block-head">
+        <h2>Built for Practical Printing</h2>
+      </div>
+      <p>These tools are designed as lightweight browser applications for everyday printing work. Many of them include offline-friendly functionality, so once a tool has loaded or been cached by your browser, you can continue using supported features without relying on a constant internet connection.</p>
+      <p class="offline-note">Offline behavior can vary by tool and browser. Some hardware features, such as direct scanner or printer integration, may require the local agent or browser print dialog described inside the individual app.</p>
+    </div>
+  </section>
 
-                function typeText(el, text, cb) {
-                    if (reduced) {
-                        el.textContent = text;
-                        el.classList.add("fade-in");
-                        cb();
-                        return;
-                    }
-                    el.classList.add("fade-in");
-                    var i = 0;
-                    var caret = document.createElement("span");
-                    caret.className = "caret";
-                    function step() {
-                        el.textContent = text.slice(0, i);
-                        el.appendChild(caret);
-                        i++;
-                        if (i <= text.length) {
-                            setTimeout(step, 18 + Math.random() * 22);
-                        } else {
-                            caret.remove();
-                            cb();
-                        }
-                    }
-                    step();
-                }
+</main>
 
-                function runStep(idx) {
-                    if (idx >= sequence.length) {
-                        footer.classList.add("fade-in");
-                        return;
-                    }
-                    var s = sequence[idx];
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <h2>Free Print Tools</h2>
+  <p>Free, practical printing tools for everyday work.</p>
+  <p>Free • Browser-Based • Offline-Friendly</p>
+  <p class="fine-print">© 2026 Free Print Tools · More tools are added over time.</p>
+</footer>
 
-                    if (s.type === "prompt") {
-                        var line = makeLine("prompt");
-                        body.appendChild(line);
-                        typeText(line, "", function () {}); // placeholder, replaced below
-                        // build prompt with colored path + typed command
-                        line.innerHTML = 'chefrel@baracol:<span class="path">~</span>$ ';
-                        var cmdSpan = document.createElement("span");
-                        line.appendChild(cmdSpan);
-                        typeText(cmdSpan, s.text, function () {
-                            runStep(idx + 1);
-                        });
-                    } else if (s.type === "out") {
-                        var line = makeLine("out");
-                        body.appendChild(line);
-                        typeText(line, "> " + s.text, function () {
-                            setTimeout(function () {
-                                runStep(idx + 1);
-                            }, 120);
-                        });
-                    } else if (s.type === "status") {
-                        var line = makeLine("out");
-                        body.appendChild(line);
-                        line.classList.add("fade-in");
-                        line.innerHTML = '<span class="status"><span class="pulse"></span>' + s.text + "</span>";
-                        setTimeout(function () {
-                            runStep(idx + 1);
-                        }, 350);
-                    } else if (s.type === "routes") {
-                        var routes = document.createElement("div");
-                        routes.className = "routes fade-in";
-                        routes.innerHTML =
-                            '<a class="route" href="#contact">' +
-                            '<span class="l"><span class="cmd">./hire-me</span><span class="desc">start a project</span></span>' +
-                            '<span class="arrow">→</span></a>' +
-                            '<a class="route" href="https://chefbarac.github.io/hub/?source=main">' +
-                            '<span class="l"><span class="cmd">./hub</span><span class="desc">apps &amp; tools</span></span>' +
-                            '<span class="arrow">→</span></a>' +
-                            '<a class="route" href="https://chefbarac.github.io/portfolio/?source=main">' +
-                            '<span class="l"><span class="cmd">./portfolio</span><span class="desc">case studies</span></span>' +
-                            '<span class="arrow">→</span></a>';
-                        body.appendChild(routes);
-                        var contactLink = routes.querySelector('a[href="#contact"]');
-                        contactLink.addEventListener("click", function (e) {
-                            e.preventDefault();
-                            window.location.href = "mailto:chefrel.baracol@gmail.com";
-                        });
-                        setTimeout(function () {
-                            runStep(idx + 1);
-                        }, 200);
-                    }
-                }
+<script>
+(function () {
+  "use strict";
 
-                runStep(0);
-            })();
-        </script>
+  // ============================================================
+  // APP DIRECTORY
+  // Add or edit applications here. The UI renders automatically
+  // from this array — nothing else needs to change to add a tool.
+  // ============================================================
+  const apps = [
+    {
+      id: "iconprint",
+      name: "Icon Print — Bond Paper Stitcher",
+      shortDescription: "Stitch and align scanned pages to create a clean, printable long-bond document.",
+      description: "A practical bond paper stitching and printing tool for combining scanned top and bottom sections of long documents. Upload or scan both halves, use Auto-fit & Stitch to align them, fine-tune the seam, adjust page brightness, save layouts, and print or export the finished page.",
+      category: "Printing",
+      tags: ["Bond Paper", "Long Bond", "Document Scanner", "Document Printing", "Image Stitching", "Print Shop", "Offline"],
+      url: "https://chefbarac.github.io/iconprint/",
+      icon: "🖨️",
+      featured: false,
+      offline: true
+    },
+    {
+      id: "idcopy",
+      name: "ID Card Scan & Print",
+      shortDescription: "Scan or upload both sides of an ID, crop and position them, then create a printable ID layout.",
+      description: "A browser-based ID copying and printing tool for scanning or uploading the front and back of an ID card. Crop and rotate scans, reposition images, adjust page brightness, match the paper background to the scan, and prepare the result for printing.",
+      category: "ID & Documents",
+      tags: ["ID Copy", "ID Card", "ID Scanner", "ID Printing", "Document Copy", "Printing Shop", "Offline"],
+      url: "/iconprint/moreapps/idcopy.html",
+      icon: "🪪",
+      featured: false,
+      offline: true
+    },
+    {
+      id: "photoprint",
+      name: "Photo Printing Studio",
+      shortDescription: "Arrange photos on printable pages using standard photo, passport, ID, and custom sizes.",
+      description: "A flexible photo printing layout tool for preparing multiple photos on printable pages. Choose fixed photo sizes including 1R, 1×1, passport, 2×2, US passport, ID, wallet, 3R, 4R, 5R, 6R, and 8R, or create a custom size. Crop, zoom, resize, rotate, flip, adjust images, add cut guides, and print or export the layout at 300 DPI.",
+      category: "Photo Printing",
+      tags: ["Photo Printing", "Passport Photo", "2x2 Photo", "ID Photo", "A4 Printing", "3R", "4R", "5R", "6R", "8R", "300 DPI", "Offline"],
+      url: "/iconprint/moreapps/photoprint.html",
+      icon: "📷",
+      featured: false,
+      offline: true
+    },
+    {
+      id: "autocollage",
+      name: "Auto Collage — Contact Sheet",
+      shortDescription: "Automatically arrange multiple photos across one or more printable pages.",
+      description: "An automatic contact-sheet and photo-layout tool that arranges uploaded images across one or more printable pages. Choose paper size, orientation, page count, maximum image size, spacing, and image order, then manually move, resize, or rotate individual photos before printing or exporting.",
+      category: "Photo Printing",
+      tags: ["Photo Collage", "Contact Sheet", "Photo Layout", "Photo Printing", "A4 Printing", "Multiple Photos", "Print Sheet", "Offline"],
+      url: "/iconprint/moreapps/autocollage.html",
+      icon: "🖼️",
+      featured: false,
+      offline: true
+    },
+    {
+      id: "rushid",
+      name: "Rush ID — Auto Layout",
+      shortDescription: "Create ready-to-cut ID photo sheets with photos, names, signatures, copies, and cut guides.",
+      description: "A fast ID photo sheet generator designed for quick printing jobs. Upload or capture a photo, crop it, optionally add a signature and name, choose 2×2 and 1×1 ID photo copy counts, automatically arrange the sheet, add spacing and cut guides, and print or export a ready-to-cut A4 sheet.",
+      category: "ID & Photo",
+      tags: ["Rush ID", "2x2 ID Photo", "1x1 ID Photo", "ID Picture", "Passport Photo", "A4 Printing", "Photo Layout", "Print Shop", "Offline"],
+      url: "/iconprint/moreapps/rushid.html",
+      icon: "🪪",
+      featured: true,
+      offline: true
+    },
+    {
+      id: "stickerrepeat",
+      name: "Sticker Repeat",
+      shortDescription: "Automatically repeat sticker designs into printable A4 or half-A4 sheets with custom sizes and spacing.",
+      description: "A sticker sheet generator for creating multiple copies of sticker designs on A4 or half-A4 pages. Set sticker dimensions, gaps, page padding, upload designs, optionally fill leftover space with business branding stickers, add cut lines, and print or export the finished sheet at 600 DPI.",
+      category: "Sticker Printing",
+      tags: ["Sticker Printing", "Sticker Sheet", "Sticker Layout", "A4 Sticker", "Half A4", "Business Stickers", "Label Printing", "600 DPI", "Print Shop", "Offline"],
+      url: "/iconprint/moreapps/stickerrepeat.html",
+      icon: "🏷️",
+      featured: false,
+      offline: true
+    },
+    {
+      id: "b2blamination",
+      name: "Back to Back Lamination",
+      shortDescription: "Create a side-by-side front-and-back card layout for folding, cutting, and laminating.",
+      description: "A back-to-back lamination layout tool for preparing two document images on a single sheet. Upload front and back documents, choose card dimensions, set the fold gap, reposition and straighten images, and add fold, cut, and ruler guides. Includes presets for OR/CR, regular PVC cards, PhilHealth ID, and temporary National ID layouts.",
+      category: "Lamination",
+      tags: ["Back to Back", "Lamination", "Card Printing", "PVC ID", "OR CR", "Official Receipt", "Certificate of Registration", "PhilHealth ID", "National ID", "Long Bond", "Print Shop", "Offline"],
+      url: "/iconprint/moreapps/b2blamination.html",
+      icon: "📄",
+      featured: false,
+      offline: true
+    }
+  ];
 
-        <script>
-            if ("serviceWorker" in navigator) {
-                window.addEventListener("load", () => {
-                    navigator.serviceWorker.register("sw.js").catch((err) => {
-                        console.error("SW registration failed:", err);
-                    });
-                });
+  // Preferred category order (falls back to discovery order for new categories)
+  const CATEGORY_ORDER = ["Printing", "ID & Documents", "Photo Printing", "ID & Photo", "Sticker Printing", "Lamination"];
+  const presentCategories = Array.from(new Set(apps.map(a => a.category)));
+  const orderedCategories = CATEGORY_ORDER.filter(c => presentCategories.includes(c))
+    .concat(presentCategories.filter(c => !CATEGORY_ORDER.includes(c)));
 
-                 // Auto-refresh once when a new SW version takes control.
-    let refreshing = false;
-    navigator.serviceWorker.addEventListener("controllerchange", () => {
-        if (refreshing) return;
-        refreshing = true;
-        window.location.reload();
+  const featuredApp = apps.find(a => a.featured) || null;
+
+  // ---- DOM refs ----
+  const searchInput = document.getElementById("tool-search");
+  const chipsWrap = document.getElementById("filter-chips");
+  const resultCountEl = document.getElementById("result-count");
+  const featuredSlot = document.getElementById("featured-slot");
+  const featuredWrap = document.getElementById("featured-wrap");
+  const toolGrid = document.getElementById("tool-grid");
+  const emptyState = document.getElementById("empty-state");
+  const recentWrap = document.getElementById("recent-wrap");
+  const recentStrip = document.getElementById("recent-strip");
+
+  let activeCategory = "All";
+
+  // ---- Category chips ----
+  function buildChips() {
+    const cats = ["All", ...orderedCategories];
+    chipsWrap.innerHTML = "";
+    cats.forEach(cat => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip";
+      btn.textContent = cat;
+      btn.setAttribute("aria-pressed", cat === activeCategory ? "true" : "false");
+      btn.addEventListener("click", () => {
+        activeCategory = cat;
+        Array.from(chipsWrap.children).forEach(c => c.setAttribute("aria-pressed", "false"));
+        btn.setAttribute("aria-pressed", "true");
+        render();
+      });
+      chipsWrap.appendChild(btn);
     });
-            }
-        </script>
-    </body>
+  }
+
+  // ---- Matching logic ----
+  function matchesQuery(app, query) {
+    if (!query) return true;
+    const haystack = [
+      app.name,
+      app.shortDescription,
+      app.description,
+      app.category,
+      ...(app.tags || [])
+    ].join(" ").toLowerCase();
+    return haystack.includes(query.toLowerCase());
+  }
+
+  function matchesCategory(app) {
+    return activeCategory === "All" || app.category === activeCategory;
+  }
+
+  function getFiltered() {
+    const query = searchInput.value.trim();
+    return apps.filter(a => matchesCategory(a) && matchesQuery(a, query));
+  }
+
+  // ---- Card builders ----
+  function toolCardHTML(app) {
+    const tags = (app.tags || []).slice(0, 4)
+      .map(t => `<span class="tag">${escapeHTML(t)}</span>`).join("");
+    const offline = app.offline
+      ? `<span class="offline-badge">📴 Works Offline</span>`
+      : "";
+    return `
+      <a class="tool-card" href="${escapeAttr(app.url)}" data-app-id="${escapeAttr(app.id)}" data-app-name="${escapeAttr(app.name)}">
+        <div class="tool-card-top">
+          <span class="tool-icon" aria-hidden="true">${app.icon}</span>
+          <span class="category-badge">${escapeHTML(app.category)}</span>
+        </div>
+        <h3>${escapeHTML(app.name)}</h3>
+        <p class="desc">${escapeHTML(app.shortDescription)}</p>
+        <div class="tag-row">${tags}</div>
+        ${offline}
+        <span class="open-cta">Open Tool →</span>
+      </a>`;
+  }
+
+  function featuredCardHTML(app) {
+    return `
+      <div class="featured-card">
+        <div class="featured-icon" aria-hidden="true">${app.icon}</div>
+        <div>
+          <div class="featured-badges">
+            <span class="stamp-badge">⭐ Featured</span>
+            <span class="quiet-badge">⚡ Quick ID Printing</span>
+          </div>
+          <h3>${escapeHTML(app.name)}</h3>
+          <p class="desc">${escapeHTML(app.description)}</p>
+          <p class="featured-specs">2×2 &amp; 1×1 · Names &amp; Signatures · Cut Guides · A4</p>
+        </div>
+        <div class="featured-actions">
+          <a class="btn btn-primary" href="${escapeAttr(app.url)}" data-app-id="${escapeAttr(app.id)}" data-app-name="${escapeAttr(app.name)}">Open Rush ID →</a>
+        </div>
+      </div>`;
+  }
+
+  function escapeHTML(str) {
+    return String(str).replace(/[&<>"']/g, s => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[s]));
+  }
+  function escapeAttr(str) { return escapeHTML(str); }
+
+  // ---- Render ----
+  function render() {
+    const filtered = getFiltered();
+
+    // Result count
+    if (filtered.length === 0) {
+      resultCountEl.textContent = "";
+    } else if (filtered.length === 1) {
+      resultCountEl.textContent = "1 tool found";
+    } else {
+      resultCountEl.textContent = filtered.length + " tools found";
+    }
+
+    // Featured section: only show if it matches the current filter/search
+    const featuredMatches = featuredApp && filtered.some(a => a.id === featuredApp.id);
+    if (featuredApp && featuredMatches) {
+      featuredWrap.style.display = "";
+      featuredSlot.innerHTML = featuredCardHTML(featuredApp);
+    } else {
+      featuredWrap.style.display = "none";
+      featuredSlot.innerHTML = "";
+    }
+
+    // All Tools grid (excludes the featured app so it isn't duplicated)
+    const gridApps = filtered.filter(a => !featuredApp || a.id !== featuredApp.id);
+    if (gridApps.length === 0 && filtered.length === 0) {
+      toolGrid.style.display = "none";
+      emptyState.style.display = "";
+    } else {
+      toolGrid.style.display = "";
+      emptyState.style.display = "none";
+      toolGrid.innerHTML = gridApps.map(toolCardHTML).join("");
+    }
+
+    attachRecentTracking();
+  }
+
+  // ---- Recently Used (localStorage) ----
+  const RECENT_KEY = "fpt_recent_tools";
+
+  function getRecent() {
+    try {
+      const raw = localStorage.getItem(RECENT_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) { return []; }
+  }
+
+  function saveRecent(id, name) {
+    try {
+      let list = getRecent().filter(item => item.id !== id);
+      list.unshift({ id, name, ts: Date.now() });
+      list = list.slice(0, 4);
+      localStorage.setItem(RECENT_KEY, JSON.stringify(list));
+    } catch (e) { /* localStorage unavailable — fail silently */ }
+  }
+
+  function renderRecent() {
+    const list = getRecent();
+    if (!list.length) {
+      recentWrap.style.display = "none";
+      return;
+    }
+    recentWrap.style.display = "";
+    recentStrip.innerHTML = list.map(item => {
+      const app = apps.find(a => a.id === item.id);
+      if (!app) return "";
+      return `<a class="recent-chip" href="${escapeAttr(app.url)}" data-app-id="${escapeAttr(app.id)}" data-app-name="${escapeAttr(app.name)}">
+        <span aria-hidden="true">${app.icon}</span>${escapeHTML(app.name)}
+      </a>`;
+    }).join("");
+    attachRecentTracking();
+  }
+
+  function attachRecentTracking() {
+    document.querySelectorAll("[data-app-id]").forEach(el => {
+      if (el.dataset.recentBound) return;
+      el.dataset.recentBound = "1";
+      el.addEventListener("click", () => {
+        saveRecent(el.dataset.appId, el.dataset.appName);
+      });
+    });
+  }
+
+  // ---- Nav scroll ----
+  document.querySelectorAll("[data-scroll]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const target = document.querySelector(btn.getAttribute("data-scroll"));
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  // ---- Wire up search/filter ----
+  searchInput.addEventListener("input", render);
+
+  // ---- Init ----
+  buildChips();
+  render();
+  renderRecent();
+})();
+</script>
+
+<!-- ============================================================
+     OFFLINE SUPPORT FOR THE HUB ITSELF
+     A service worker is intentionally not registered here to keep
+     this a single deployable file with no build step. Service
+     workers also require a secure context (HTTPS) and will not run
+     when this file is opened directly via a file:// URL, so the
+     hub page itself does not claim offline support — only the
+     individual tools (marked "offline: true" above) do, once they
+     have implemented their own offline handling.
+     ============================================================ -->
+
+</body>
 </html>
